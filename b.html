@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 배우기</title>
+    <style>
+      .box{          
+          position: fixed; top:0; bottom:0; left:0; right:0;         
+          border-radius: 50%; 
+          margin:auto; 
+          background:black;   
+          width: 0; height: 0;        
+        }      
+    </style>
+    <script src="js/jquery-2.2.4.js"></script>
+    <script>
+      $(document).ready(function(){
+          // ea(숫자) -> 태그의 순서에 맞춰 선택하는 메서드
+          // animate
+        $('#btns boutton').eq(0).click(
+           function()
+        $('.box').animate({"width":100,"height":100,},300);
+      }
+      $(document).ready(function(){
+        $('#btns boutton').eq(1).click(
+           function()
+        $('.box').animate({"width":100,"height":100,},300);
+      }
+      $(document).ready(function(){
+        $('#btns boutton').eq(2).click(
+           function()
+        $('.box').css({"width":100,"height":100,});
+      }
+        );
+      });
+    </script> 
+</head>
+<body>
+    <div id="btns">
+        <button>너비 100</button>
+        <button>너비 500</button>
+        <button>초기화</button>
+    </div>
+    <div class="box"></div>
+</body>
+</html>

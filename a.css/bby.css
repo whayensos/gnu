@@ -1,0 +1,11 @@
+.d-none{ display: none !important}
+#hd{ background-color: white; min-width: auto;}
+#gnb{ background-color: transparent; }
+#gnb #gnb_1dul{ border-bottom:0}
+#hd_wrapper{ height: auto; display: flex;
+             justify-content: space-between; align-items: center;}
+#logo{ padding: 0}
+#gnb .gnb_wrap{ width: auto}
+#hd_wrapper::after, .gnb_1dli .bg{ display:none}
+
+/* width, height, min-width 여기가 중요!!! ::after, ::before 조심 */
